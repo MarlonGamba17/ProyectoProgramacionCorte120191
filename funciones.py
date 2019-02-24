@@ -11,7 +11,9 @@ def calcular_precio_producto(coste_producto):
 
 
 def calcular_precio_servicio(cantidad_horas):
-    pass
+    precio_servicio = cantidad_horas * TARIFA_HORA
+    
+    return precio_servicio
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
