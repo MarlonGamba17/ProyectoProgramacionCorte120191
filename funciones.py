@@ -1,6 +1,8 @@
-def calcular_precio_producto(coste_producto):
-    TASA_IVA = 0.19
 
+TASA_IVA = 0.19
+TARIFA_HORA = 100000
+TASA_EXTRA = 0.25
+def calcular_precio_producto(coste_producto):
     precio_producto_sin_iva = coste_producto * 1.5
     precio_producto = precio_producto_sin_iva + calcular_iva_producto(precio_producto_sin_iva, TASA_IVA)
 
@@ -12,7 +14,10 @@ def calcular_precio_servicio(cantidad_horas):
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
-    pass
+    precio_servicio_sin_extras = cantidad_horas * TARIFA_HORA
+    precio_servicio_extras = precio_servicio_sin_extras + (precio_servicio_sin_extras * TASA_EXTRA)
+
+    return precio_servicio_extras
 
 
 def calcular_costo_envio(kilometros):
