@@ -1,12 +1,11 @@
 
-TASA_IVA = 0.19
+COMISION_VENTA = 0.5
 TARIFA_HORA = 100000
 TASA_EXTRA = 0.25
 TARIFA_RECARGO_ENVIO = 115
 
 def calcular_precio_producto(coste_producto):
-    precio_producto_sin_iva = coste_producto * 1.5
-    precio_producto = precio_producto_sin_iva + calcular_iva_producto(precio_producto_sin_iva, TASA_IVA)
+    precio_producto = coste_producto + (coste_producto * COMISION_VENTA)
 
     return precio_producto
 
@@ -16,7 +15,7 @@ def calcular_precio_servicio(cantidad_horas):
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
-    precio_servicio_sin_recargo_extras = cantidad_horas * TARIFA_HORA
+    precio_servicio_sin_recargo_extras = calcular_precio_servicio(cantidad_horas)
     precio_servicio_extras = precio_servicio_sin_recargo_extras + (precio_servicio_sin_recargo_extras * TASA_EXTRA)
 
     return precio_servicio_extras
@@ -26,8 +25,8 @@ def calcular_costo_envio(kilometros):
     pass
 
 def calcular_precio_producto_fuera(coste_producto, kilometros):
-    precio_producto_con_envio = coste_producto + calcular_costo_envio(kilometros)
-    precio_producto_fuera = precio_producto_con_envio + calcular_iva_producto(precio_producto_con_envio, TASA_IVA)
+    precio_producto_fuera = coste_producto + calcular_costo_envio(kilometros)
+
     return precio_producto_fuera
 
 
@@ -36,7 +35,10 @@ def calcular_iva_producto(coste_producto, tasa):
 
 
 def calcular_iva_servicio(cantidad_horas, tasa):
-    pass
+    precio_servicio = calcular_precio_servicio(cantidad_horas)
+    iva_servicio = precio_servicio * tasa
+
+    return iva_servicio
 
 
 def calcular_iva_envio(kilometros, tasa):
