@@ -4,11 +4,11 @@ def calcular_precio_producto(coste_producto):
 
     Calcular el precio del producto dado el costo del producto
 
-    TASA_IVA= float contiene el valor del iva fijado en el 19%
-    precio_producto_sin_iva= float contiene valor del producto sin incluir valor del iva 
     coste_producto= float contiene el valor neto del producto
-    precio producto= float contiene el precio del procducto sin iva mas el Iva
-    return= float retorna el precio del producto incluyendo el iva
+    precio_producto= float contiene el precio del procducto sin iva mas el Iva
+    COMISION_VENTA= float contiene la comision de venta
+
+    return= float retorna el precio del producto incluyendo la comision de venta
     '''
 
 def calcular_precio_servicio(cantidad_horas):
@@ -21,7 +21,7 @@ def calcular_precio_servicio_extras(cantidad_horas):
     
     Calcular el precio de  las horas extras prestadas en un servicio dada la cantidad de horas extras
     TASA EXTRA= float contiene el valor de la tasa extra asignado al 25% 
-    tarifa_hora= float representa el valor de tarifa_hora asignado en 100000
+    cantdad_horas= float contiene la cantidad de horas extras prestadas en el servicio 
     precio_servicio_sin_recargo_extras= float contiene el precio de servicio sin el recargo de horas extras
     precio_servicio_extras= float contiene el precio de servicio con el recago de las horas extras
     
@@ -35,8 +35,15 @@ def calcular_costo_envio(kilometros):
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
     '''
+    (float,float) -> float
 
+    Calcular el precio del producto cuando se vende fuera de la ciudad
 
+    precio_producto_fuera= float contiene el costo del producto mas el costo del envio
+    coste_producto= float contiene el valor neto del producto
+    kilometros=float representa el numero de kilometros desde el punto de envio 
+    
+    return float retorna el precio del producto incluyendo el costo de envio 
     '''
 
 
@@ -46,8 +53,20 @@ def calcular_iva_producto(coste_producto, tasa):
 
 def calcular_iva_servicio(cantidad_horas, tasa):
     '''
+    (float,float) ->float
+    
+    calcular el iva del servicio
+    
+    tasa float representa la tasa del iva aplicada al servicio
+    precio_servicio= float contiene el precio total del servicio
+    cantidad_horas= float contiene la cantidad de horas prestadas en el servicio
+    iva_servicio= float contiene el iva definido segun la tasa dada
 
+    return float retorna el calculo del iva para un servicio
     '''
+
+
+    
 
 
 def calcular_iva_envio(kilometros, tasa):
