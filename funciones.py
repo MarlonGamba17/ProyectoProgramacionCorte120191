@@ -1,5 +1,10 @@
 def calcular_precio_producto(coste_producto):
-    pass
+    TASA_IVA = 0.19
+
+    precio_producto_sin_iva = coste_producto * 1.5
+    precio_producto = precio_producto_sin_iva + calcular_iva_producto(precio_producto_sin_iva, TASA_IVA)
+
+    return precio_producto
 
 
 def calcular_precio_servicio(cantidad_horas):
