@@ -36,7 +36,7 @@ def calcular_precio_producto_fuera(coste_producto, kilometros):
 
 
 def calcular_iva_producto(coste_producto, tasa):
-    iva_producto= coste_producto *tasa
+    iva_producto= calcular_precio_producto(coste_producto) * tasa
 
     return iva_producto
     
