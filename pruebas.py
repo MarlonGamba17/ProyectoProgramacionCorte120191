@@ -29,13 +29,14 @@ class pruebas(unittest.TestCase):
         self.assertEqual(32000, f.calcular_iva_servicio(2, 0.16))
 
     def test_calcular_iva_envio(self):
-        pass
+        self.assertEqual(f.calcular_iva_envio(20, 0.19), 437)
+        self.assertEqual(f.calcular_iva_envio(30, 0.12), 414)
 
     def test_calcular_iva_servicio_fuera(self):
         pass
 
     def test_calcular_recaudo_locales(self):
-        pass
+        
 
     def test_calcular_recaudo_horas_extra(self):
         pass
