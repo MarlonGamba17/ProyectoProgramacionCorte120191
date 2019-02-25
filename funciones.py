@@ -24,7 +24,10 @@ def calcular_precio_servicio_extras(cantidad_horas):
 
 
 def calcular_costo_envio(kilometros):
-    pass
+    costo_envio = TARIFA_RECARGO_ENVIO * kilometros
+
+    return costo_envio
+
 
 def calcular_precio_producto_fuera(coste_producto, kilometros):
     precio_producto_fuera = coste_producto + calcular_costo_envio(kilometros)
@@ -54,7 +57,11 @@ def calcular_iva_servicio_fuera(cantidad_horas, tasa):
 def calcular_recaudo_locales(coste_producto_1,
                              coste_producto_2,
                              coste_producto_3):
-    pass
+    recaudo_locales = calcular_precio_producto(coste_producto_1) + \
+                      calcular_precio_producto(coste_producto_2) + \
+                      calcular_precio_producto(coste_producto_3)
+
+    return recaudo_locales
 
 def calcular_recaudo_horas_extra(horas_1,
                                  horas_2,
@@ -67,4 +74,9 @@ def calcular_recaudo_mixto_local(coste_producto_1,
                                  coste_producto_2,
                                  horas_1,
                                  horas_2):
-    pass
+    recaudo_mixto_local = calcular_precio_producto(coste_producto_1) + \
+                          calcular_precio_producto(coste_producto_2) + \
+                          calcular_precio_servicio(horas_1) + \
+                          calcular_precio_servicio(horas_2)
+
+    return recaudo_mixto_local
