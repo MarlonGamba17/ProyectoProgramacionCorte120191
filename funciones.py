@@ -30,7 +30,7 @@ def calcular_costo_envio(kilometros):
 
 
 def calcular_precio_producto_fuera(coste_producto, kilometros):
-    precio_producto_fuera = coste_producto + calcular_costo_envio(kilometros)
+    precio_producto_fuera = calcular_precio_producto(coste_producto) + calcular_costo_envio(kilometros)
 
     return precio_producto_fuera
 
