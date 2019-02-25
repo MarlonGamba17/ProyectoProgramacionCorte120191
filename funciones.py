@@ -21,7 +21,6 @@ def calcular_precio_producto(coste_producto):
     return precio_producto
 
 
-
 def calcular_precio_servicio(cantidad_horas):
     '''
     (float) -> float
@@ -56,7 +55,6 @@ def calcular_precio_servicio_extras(cantidad_horas):
     precio_servicio_extras = precio_servicio_sin_recargo_extras + (precio_servicio_sin_recargo_extras * TASA_EXTRA)
 
     return precio_servicio_extras
-
 
 
 def calcular_costo_envio(kilometros):
