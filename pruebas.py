@@ -9,6 +9,7 @@ class pruebas(unittest.TestCase):
 
     def test_calcular_precio_servicio(self):
         self.assertEqual(f.calcular_precio_servicio(48),4800000.0)
+        self.assertEqual(f.calcular_precio_servicio(0),0.0)
 
     def test_calcular_precio_servicio_extras(self):
         self.assertEqual(f.calcular_precio_servicio_extras(6), 750000.0)
@@ -16,6 +17,7 @@ class pruebas(unittest.TestCase):
 
     def test_calcular_costo_envio(self):
         self.assertEqual(f.calcular_costo_envio(289),33235.0)
+        self.assertEqual(f.calcular_costo_envio(0),0.0)
 
     def test_calcular_precio_producto_fuera(self):
         self.assertEqual(f.calcular_precio_producto_fuera(1000, 4), 1960)
@@ -23,6 +25,7 @@ class pruebas(unittest.TestCase):
 
     def test_calcular_iva_producto(self):
         self.assertEqual(f.calcular_iva_producto(100000,0.19),28500.0)
+        self.assertEqual(f.calcular_iva_producto(0,0),0.0)
 
     def test_calcular_iva_servicio(self):
         self.assertEqual(f.calcular_iva_servicio(3, 0.19), 57000)
