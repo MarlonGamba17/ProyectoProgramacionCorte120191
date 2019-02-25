@@ -45,7 +45,6 @@ def calcular_precio_servicio_extras(cantidad_horas):
     return precio_servicio_extras
 
 
-
 def calcular_costo_envio(kilometros):
     costo_envio = TARIFA_RECARGO_ENVIO * kilometros
 
@@ -84,9 +83,9 @@ def calcular_iva_servicio(cantidad_horas, tasa):
     tasa float representa la tasa del iva aplicada al servicio
     precio_servicio= float contiene el precio total del servicio
     cantidad_horas= float contiene la cantidad de horas prestadas en el servicio
-    iva_servicio= float contiene el iva definido segun la tasa dada
+    iva_servicio= float contiene el iva calculado segun la tasa dada
 
-    return float retorna el calculo del iva para un servicio
+    return float retorna el valor del iva para un servicio
     '''
     precio_servicio = calcular_precio_servicio(cantidad_horas)
     iva_servicio = precio_servicio * tasa
@@ -95,6 +94,17 @@ def calcular_iva_servicio(cantidad_horas, tasa):
 
 
 def calcular_iva_envio(kilometros, tasa):
+    '''
+    (float, float) -> float
+
+    Calcula el iva del envio
+
+    kilometros = float contiene el nùmero de kilometros desde el punto de envio
+    tasa = float contiene la tasa del iva fijada para el costo del envio
+    iva_envio = float contiene el iva calculado para el envio segun la tasa dada
+
+    return float retorna el valor del iva para el costo de envio
+    '''
     iva_envio = calcular_costo_envio(kilometros) * tasa
 
     return iva_envio
@@ -110,6 +120,18 @@ def calcular_iva_servicio_fuera(cantidad_horas, tasa):
 def calcular_recaudo_locales(coste_producto_1,
                              coste_producto_2,
                              coste_producto_3):
+    '''
+    (float, float, float) -> float
+
+    Calcular el recaudo total de la venta de 3 productos locales
+
+    coste_producto_1 = float contiene el costo del primer producto
+    coste_producto_2 = float contiene el costo del segundo producto
+    coste_producto_3 = float contiene el costo del tercer producto
+    recaudo_locales = float contene el valor total de la suma de los costos de los 3 productos vendidos
+
+    return float retornar el recaudo de la venta de 3 productos locales
+    '''
     recaudo_locales = calcular_precio_producto(coste_producto_1) + \
                       calcular_precio_producto(coste_producto_2) + \
                       calcular_precio_producto(coste_producto_3)
@@ -120,6 +142,19 @@ def calcular_recaudo_horas_extra(horas_1,
                                  horas_2,
                                  horas_3,
                                  horas_4):
+    '''
+    (float, float, float, float) -> float
+
+    Calcular el recaudo total de las horas extra
+
+    horas_1 = float contiene la primer cantidad de horas extra
+    horas_2 = float contiene la segunda cantidad de horas extra
+    horas_3 = float contiene la terera cantidad de horas extra
+    horas_4 = float contiene la cuarta cantidad de horas extra
+    recaudo_horas_extra = float contene el valor total de la suma de los precios de las horas extra
+
+    return float retornar el valor total de la suma de los precios de las horas extra
+    '''
     recaudo_horas_extra = calcular_precio_servicio_extras(horas_1) \
                           + calcular_precio_servicio_extras(horas_2) \
                           + calcular_precio_servicio_extras(horas_3) \
@@ -130,6 +165,19 @@ def calcular_recaudo_mixto_local(coste_producto_1,
                                  coste_producto_2,
                                  horas_1,
                                  horas_2):
+    '''
+    (float, float, float, float) -> float
+
+    Calcular recaudo total de la venta de 2 productos y 2 servicios
+
+    coste_producto_1 = float contiene el costo del primer producto
+    coste_producto_2 = float contiene el costo del segundo producto
+    horas_1 = float contiene el nùmero de horas del primer servicio
+    horas_2 = float contiene el nùmero de horas del segundo servicio
+    recaudo_mixto_local = float contiene el valor total de la suma de la venta de 2 productos y 2 servicios
+
+    return = float retornar el valor total de la suma de la venta de 2 productos y 2 servicios
+    '''
     recaudo_mixto_local = calcular_precio_producto(coste_producto_1) + \
                           calcular_precio_producto(coste_producto_2) + \
                           calcular_precio_servicio(horas_1) + \
