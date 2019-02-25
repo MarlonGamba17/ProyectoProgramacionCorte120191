@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16ec659a-dfd4-473f-98e2-74c975b71ebf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ProyectoProgramacionCorte120191.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProyectoProgramacionCorte120191.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funciones.py" beforeDir="false" afterPath="$PROJECT_DIR$/funciones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/funciones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="79" column="59" lean-forward="true" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+            <state relative-caret-position="-272">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pruebas.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,6 +56,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/funciones.py" />
+        <option value="$PROJECT_DIR$/pruebas.py" />
       </list>
     </option>
   </component>
@@ -68,6 +85,9 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -79,6 +99,94 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for pruebas.pruebas.test_calcular_iva_servicio">
+    <configuration name="pruebas" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProyectoProgramacionCorte120191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pruebas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_calcular_iva_servicio" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoProgramacionCorte120191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_calcular_iva_servicio&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoProgramacionCorte120191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_calcular_precio_producto&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoProgramacionCorte120191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_calcular_precio_producto_fuera&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_servicio_extras" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoProgramacionCorte120191" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pruebas.pruebas.test_calcular_precio_servicio_extras&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_calcular_iva_servicio" />
+        <item itemvalue="Python.pruebas" />
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" />
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_calcular_precio_producto" />
+        <item itemvalue="Python tests.Unittests for pruebas.pruebas.test_calcular_precio_servicio_extras" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -93,12 +201,44 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_precio_producto_fuera - 2019.02.24 at 21h 40m 34s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_precio_producto_fuera - 2019.02.24 at 21h 40m 47s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_precio_producto_fuera - 2019.02.24 at 21h 40m 56s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_precio_producto_fuera - 2019.02.24 at 21h 44m 03s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_precio_producto_fuera - 2019.02.24 at 21h 44m 12s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_precio_producto_fuera" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_iva_servicio - 2019.02.24 at 21h 47m 43s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_iva_servicio" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_iva_servicio - 2019.02.24 at 21h 47m 50s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_iva_servicio" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_iva_servicio - 2019.02.24 at 21h 47m 59s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_iva_servicio" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_iva_servicio - 2019.02.24 at 21h 48m 49s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_iva_servicio" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_pruebas_pruebas_test_calcular_iva_servicio - 2019.02.24 at 21h 49m 03s.xml">
+      <configuration name="Unittests for pruebas.pruebas.test_calcular_iva_servicio" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -106,7 +246,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38625205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -125,10 +265,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/funciones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="79" column="59" lean-forward="true" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
+        <state relative-caret-position="-272">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
