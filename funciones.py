@@ -53,7 +53,10 @@ def calcular_iva_envio(kilometros, tasa):
 
 
 def calcular_iva_servicio_fuera(cantidad_horas, tasa):
-    pass
+    precio_servicio = calcular_precio_servicio_fuera(cantidad_horas)
+    iva_servicio = precio_servicio * tasa
+
+    return iva_servicio
 
 
 def calcular_recaudo_locales(coste_producto_1,
