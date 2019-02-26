@@ -146,7 +146,7 @@ def calcular_iva_envio(kilometros, tasa):
     return iva_envio
 
 
-def calcular_iva_servicio_fuera(cantidad_horas, tasa):
+def calcular_iva_servicio_extra(cantidad_horas, tasa):
     '''
     (float,float) ->float
 
@@ -160,8 +160,7 @@ def calcular_iva_servicio_fuera(cantidad_horas, tasa):
 
     return float retorna el calculo del iva para un servicio fuera
     '''
-    precio_servicio = calcular_precio_servicio_fuera(cantidad_horas)
-    iva_servicio = precio_servicio * tasa
+    iva_servicio= calcular_precio_servicio_extras(cantidad_horas) * tasa
 
     return iva_servicio
 
@@ -209,6 +208,8 @@ def calcular_recaudo_horas_extra(horas_1,
                           + calcular_precio_servicio_extras(horas_2) \
                           + calcular_precio_servicio_extras(horas_3) \
                           + calcular_precio_servicio_extras(horas_4)
+
+    return recaudo_horas_extra
 
 
 def calcular_recaudo_mixto_local(coste_producto_1,
