@@ -54,9 +54,8 @@ def calcular_iva_envio(kilometros, tasa):
     return iva_envio
 
 
-def calcular_iva_servicio_fuera(cantidad_horas, tasa):
-    precio_servicio = calcular_precio_servicio_fuera(cantidad_horas)
-    iva_servicio = precio_servicio * tasa
+def calcular_iva_servicio_extra(cantidad_horas, tasa):
+    iva_servicio= calcular_precio_servicio_extras(cantidad_horas) * tasa
 
     return iva_servicio
 
