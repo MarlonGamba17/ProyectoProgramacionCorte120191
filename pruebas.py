@@ -20,36 +20,37 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_costo_envio(0),0.0)
 
     def test_calcular_precio_producto_fuera(self):
-        self.assertEqual(f.calcular_precio_producto_fuera(1000, 4), 1960)
-        self.assertEqual(f.calcular_precio_producto_fuera(2000, 6), 3690)
+        self.assertEqual(f.calcular_precio_producto_fuera(1000, 4), 1960.0)
+        self.assertEqual(f.calcular_precio_producto_fuera(2000, 6), 3690.0)
 
     def test_calcular_iva_producto(self):
         self.assertEqual(f.calcular_iva_producto(100000,0.19),28500.0)
         self.assertEqual(f.calcular_iva_producto(0,0),0.0)
 
     def test_calcular_iva_servicio(self):
-        self.assertEqual(f.calcular_iva_servicio(3, 0.19), 57000)
-        self.assertEqual(f.calcular_iva_servicio(2, 0.16), 32000)
+        self.assertEqual(f.calcular_iva_servicio(3, 0.19), 57000.0)
+        self.assertEqual(f.calcular_iva_servicio(2, 0.16), 32000.0)
 
     def test_calcular_iva_envio(self):
-        self.assertEqual(f.calcular_iva_envio(20, 0.19), 437)
-        self.assertEqual(f.calcular_iva_envio(30, 0.12), 414)
+        self.assertEqual(f.calcular_iva_envio(20, 0.19), 437.0)
+        self.assertEqual(f.calcular_iva_envio(30, 0.12), 414.0)
 
-    def test_calcular_iva_servicio_fuera(self):
-        # pendiente para desarrollar se requiere validar con el profesor.
-        pass
+    def test_calcular_iva_servicio_extra(self):
+        self.assertEqual(f.calcular_iva_servicio_extra(15, 0.8),12.0)
+        self.assertEqual(f.calcular_iva_servicio_extra(0, 0.8),0)
 
     def test_calcular_recaudo_locales(self):
-        self.assertEqual(f.calcular_recaudo_locales(1000, 2000, 3000), 4000
-        self.assertEqual(f.calcular_recaudo_locales(2000, 1200,   0 ), 0
-        self.assertEqual(f.calcular_recaudo_locales(800,  700 ,   1 ), 560     
+        self.assertEqual(f.calcular_recaudo_locales(1000, 2000, 3000), 9000.0)
+        self.assertEqual(f.calcular_recaudo_locales(2000, 1200,   0 ), 0)
+        self.assertEqual(f.calcular_recaudo_locales(800,  700 ,   1 ), 560.0)     
 
     def test_calcular_recaudo_horas_extra(self):
-        
+        self.assertEqual(f.calcular_recaudo_horas_extra(2.5, 5, 6, 18), 31.5)
+        self.assertEqual(f.calcular_recaudo_horas_extra(0, 0, 0, 0), 0)
 
     def test_calcular_recaudo_mixto_local(self):
-        pass
-
+        self.assertEqual(f.calcular_recaudo_mixto_local(34000, 59000, 34, 10),4539500.0)
+        self.assertEqual(f.calcular_recaudo_mixto_local(4000, 23000, 14, 1),100000.0)
 
 if __name__ == 'main':
     unittest.main()
