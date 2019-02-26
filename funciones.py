@@ -156,8 +156,7 @@ def calcular_iva_servicio_extra(cantidad_horas, tasa):
 
     return float retorna el calculo del iva para un servicio extra
     '''
-    precio_servicio = calcular_precio_servicio_fuera(cantidad_horas)
-    iva_servicio = precio_servicio * tasa
+    iva_servicio= calcular_precio_servicio_extras(cantidad_horas) * tasa
 
     return iva_servicio
 
