@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 COMISION_VENTA = 0.5
 TARIFA_HORA = 100000
