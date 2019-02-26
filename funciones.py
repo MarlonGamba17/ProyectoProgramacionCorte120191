@@ -205,6 +205,8 @@ def calcular_recaudo_horas_extra(horas_1,
                           + calcular_precio_servicio_extras(horas_3) \
                           + calcular_precio_servicio_extras(horas_4)
 
+    return recaudo_horas_extra
+
 
 def calcular_recaudo_mixto_local(coste_producto_1,
                                  coste_producto_2,
