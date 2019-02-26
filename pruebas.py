@@ -41,8 +41,8 @@ class pruebas(unittest.TestCase):
 
     def test_calcular_recaudo_locales(self):
         self.assertEqual(f.calcular_recaudo_locales(1000, 2000, 3000), 9000.0)
-        self.assertEqual(f.calcular_recaudo_locales(2000, 1200,   0 ), 0)
-        self.assertEqual(f.calcular_recaudo_locales(800,  700 ,   1 ), 560.0)     
+        self.assertEqual(f.calcular_recaudo_locales(2000, 1200,   0 ), 4800.0)
+        self.assertEqual(f.calcular_recaudo_locales(800,  700 ,   1 ), 2251.5)     
 
     def test_calcular_recaudo_horas_extra(self):
         self.assertEqual(f.calcular_recaudo_horas_extra(2.5, 5, 6, 18), 31.5)
@@ -50,7 +50,7 @@ class pruebas(unittest.TestCase):
 
     def test_calcular_recaudo_mixto_local(self):
         self.assertEqual(f.calcular_recaudo_mixto_local(34000, 59000, 34, 10),4539500.0)
-        self.assertEqual(f.calcular_recaudo_mixto_local(4000, 23000, 14, 1),100000.0)
+        self.assertEqual(f.calcular_recaudo_mixto_local(4000, 23000, 14, 1), 1540500.0)
 
 if __name__ == 'main':
     unittest.main()
