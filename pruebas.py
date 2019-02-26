@@ -40,10 +40,12 @@ class pruebas(unittest.TestCase):
         pass
 
     def test_calcular_recaudo_locales(self):
-        
+        self.assertEqual(f.calcular_recaudo_locales(1000, 2000, 3000), 4000
+        self.assertEqual(f.calcular_recaudo_locales(2000, 1200,   0 ), 0
+        self.assertEqual(f.calcular_recaudo_locales(800,  700 ,   1 ), 560     
 
     def test_calcular_recaudo_horas_extra(self):
-        pass
+        
 
     def test_calcular_recaudo_mixto_local(self):
         pass
